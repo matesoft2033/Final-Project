@@ -1,0 +1,33 @@
+@import "resetstyle";
+@import "variables";
+@import "mixin";
+body {
+    background-color: #F5F5F5;
+    header {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        background-color: gray;
+        div {
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 15vw;
+                @media only screen and (max-width: 990px) {
+                    max-width: 18vw;
+                }
+            }
+            nav {
+                a {
+                    text-decoration: none;
+                    font-family: "BPG Banner", sans-serif;
+                    margin-right: 30px;
+                    color: #FFFF;
+                }
+            }
+        }
+    }
+    hr {
+        border-color: red;
+    }
+}
