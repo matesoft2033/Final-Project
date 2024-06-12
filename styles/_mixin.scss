@@ -1,0 +1,24 @@
+@mixin button () {
+    font-family: "BPG Banner", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $primary-color;
+    color: white;
+    width: 80px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+    &:hover, :focus, :active {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
