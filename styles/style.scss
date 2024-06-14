@@ -5,15 +5,16 @@ body {
     background-color: $body-background-color;
     header {
         position: fixed;
-        display: flex;
-        align-items: center;
+        display: $flex;
+        align-items: $cent;
         justify-content: space-around;
         width: 100%;
         height: 10vh;
         background-color: $header-background-color;
+        z-index: 1;
         div {
-            display: flex;
-            align-items: center;
+            display: $flex;
+            align-items: $cent;
             img {
                 transform: scale(1);
                 transition: transform 0.5s ease;
@@ -33,7 +34,7 @@ body {
                 }
                 a {
                     text-decoration: none;
-                    font-family: "BPG Banner", sans-serif;
+                    font-family: $font-fam;
                     margin-right: 30px;
                     color: $a-color;
 
@@ -53,23 +54,24 @@ body {
             @include button ();
         }
         .fa.fa-bars {
-            display: none;
+            display: $none;
         }
     }
     @media only screen and (max-width: 1024px) {
         nav {
-            display: none;
+            display: $none;
         }
         header {
-            display: flex;
+            display: $flex;
             justify-content: space-between;
+            z-index: 1;
             div {
                 img {
                     max-width: 25vw;
                 }
             }
             .div1 {
-                display: flex;
+                display: $flex;
                 #spacer {
                     width: 60px;
                 }
@@ -78,7 +80,7 @@ body {
         .fa.fa-bars {
             display: inline-block !important;
             font-size: 35px;
-            position: relative;
+            position: $rel;
             right: 30px;
         }
     }
@@ -86,7 +88,7 @@ body {
         .opening {
             padding-top: 200px;
             padding-left: 60px;
-            display: flex;
+            display: $flex;
             justify-content: space-between;        
             .div {
                 h1 {
@@ -102,33 +104,20 @@ body {
                     max-width: 482px;
                     margin-top: 20px;
                     color: #69697b;
-                    font-family: "ALK Rounded Nusx Med", sans-serif;
+                    font-family: $fam2;
                 }
                 .btn {
-                    position: relative;
+                    position: $rel;
                     top: 50px;
                     @include button ();
                     padding: 20px;
                 }
                 .btn1 {
-                    position: relative;
-                    top: 50px;
-                    @include button ();
-                    background-color: rgba(0, 0, 0, 0);
-                    padding: 20px;
-                    color: $primary-color;
-                    border: 1px solid $primary-color;
-                    transition: 0.5s;
-
-                    &:hover, :focus, :active {
-                        background-color: $primary-color;
-                        color: white;
-                        transition: 0.5s;
-                    }
+                    @include button2 ();
                 }
             }
             img {
-                position: relative;
+                position: $rel;
                 right: 20px;
                 max-width: 440px;
                 max-height: max-content;
@@ -137,26 +126,6 @@ body {
                 -moz-box-shadow: -5px 26px 20px 0px rgba(0,0,0,0.52);
                 box-shadow: -5px 26px 20px 0px rgba(0,0,0,0.52);
             } 
-        }
-    }
-    @media only screen and (max-width: 1024px) {
-        main {
-            .opening {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                align-content: center;
-                div {
-                    text-align: center;
-                    a {
-                        font-size: 25px !important;
-                    }
-                }
-                img {
-                    margin-top: 100px !important;
-                    margin-left: 40px;
-                }
-            }
         }
     }
     @media only screen and (max-width: 997px) {
@@ -186,7 +155,7 @@ body {
             }
             .div1 {
                 a {
-                    display: none !important;
+                    display: $none !important;
                 }
             }
         }
@@ -214,6 +183,13 @@ body {
         }
     }
     @media only screen and (max-width: 490px) {
+        header {
+            div {
+                img {
+                    max-width: 53vw;
+                }
+            }
+        }
         main {
             .opening {
                 .div {
@@ -223,16 +199,305 @@ body {
                     }
                 }
                 img {
-                    max-width: 440px;
+                    max-width: 390px;
                 } 
             }
         }
     }
     @media only screen and (max-width: 436px) {
+        header {
+            div {
+                img {
+                    max-width: 60vw;
+                }
+            }
+        }
         main {
             .opening {
                 img {
-                    display: none !important;
+                    display: $none !important;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 436px)  {
+        main {
+            .opening {
+                .div {
+                    h1 {
+                        font-size: 37px !important;
+                    }
+                    a {
+                        display: inline-block;
+                        width: 100px !important;
+                    }
+                }
+            }
+        }
+    }
+    article {
+        margin-top: 350px;
+        #bigdiv {
+            @media only screen and (max-width: 1097px) {
+                max-width: 1500px;
+            }
+            display: flex;
+            .img2 {
+                max-width: 49%;
+                max-height: 390px;
+                margin-left: 60px;
+                box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+                border-radius: 18px;            
+            }
+            .img3 {
+                display: none;
+            }
+            div {
+                margin-left: 40px;
+                max-width: 456px;
+                h2 {
+                    font-family: $fam3;
+                    letter-spacing: .01em;
+                    margin-bottom: 18px;
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 1.2em;
+                }
+                p {
+                    color: #69697b;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 1.667em;
+                }
+                .btn {
+                    @include button2 ();
+                    display: inline-block;
+                }
+            }
+        }
+    }
+     @media only screen and (max-width: 1024px) {
+        main {
+            .opening {
+                display: $flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: $cent;
+                div {
+                    text-align: $cent;
+                    a {
+                        font-size: 25px !important;
+                    }
+                }
+                img {
+                    margin-top: 100px !important;
+                    margin-left: 40px;
+                }
+            }
+        }
+        article {
+            #bigdiv {
+                display: flex;
+                flex-direction: column-reverse;
+                bottom: 30px;
+                align-items: baseline;
+                .img2 {
+                    display: none;
+                }
+                .img3 {
+                    display: block;
+                    max-height: 64vh;
+                    max-width: 90vw;
+                    border-radius: 18px;
+                    box-shadow: 0 14px 54px rgba(11, 11, 44, .22);
+                    position: relative;
+                    right: 14px;
+                }
+                div {
+                    margin-bottom: 120px;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 928px) {
+        article {
+            #bigdiv {
+                div {
+                    max-width: 58vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 785px) {
+        article {
+            #bigdiv {
+                div {
+                    max-width: 65vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 700px) {
+        article {
+            #bigdiv {
+                div {
+                    max-width: 73vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 625px) {
+        article {
+            #bigdiv {
+                div {
+                    h2 {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 565px) {
+        article {
+            #bigdiv {
+                .img3 {
+                    max-width: 87vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 499px) {
+        article {
+            #bigdiv {
+                div {
+                    h2 {
+                        font-size: 28px;
+                    }
+                    a {
+                        min-width: 100%;
+                        right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        article {
+            #bigdiv {
+                div {
+                    a {
+                        min-width: 100%;
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 460px) {
+        article {
+            #bigdiv {
+                div {
+                    a {
+                        min-width: 100%;
+                        right: 6px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 440px) {
+        article {
+            #bigdiv {
+                div {
+                    a {
+                        min-width: 100%;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 390px) {
+        article {
+            #bigdiv {
+                div {
+                    a {
+                        min-width: 100%;
+                        right: 17px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 372px) {
+        article {
+            #bigdiv {
+                div {
+                    a {
+                        @include button3;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 436px) {
+        article {
+            #bigdiv {
+                div {
+                    h2 {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 405px) {
+        article {
+            #bigdiv {
+                div {
+                    h2 {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 375px) {
+        article {
+            #bigdiv {
+                div {
+                    h2 {
+                        font-size: 22.5px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 351px) {
+        article {
+            #bigdiv {
+                div {
+                    h2 {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 335px) {
+        article {
+            #bigdiv {
+                .img3 {
+                    max-width: 60vw;
+                }
+                div {
+                    a {
+                        max-width: 90%;
+                    }
                 }
             }
         }

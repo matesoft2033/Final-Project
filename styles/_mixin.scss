@@ -4,7 +4,7 @@
     font-weight: 500;
     background-color: $primary-color;
     color: white;
-    width: 80px;
+    width: 90px;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -20,5 +20,45 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+    }
+}
+@mixin button2 () {
+    position: $rel;
+    top: 50px;
+    @include button ();
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    transition: 0.5s;
+
+    &:hover, :focus, :active {
+        background-color: $primary-color;
+        color: white;
+        transition: 0.5s;
+    }
+}
+@mixin button3 () {
+    font-family: "BPG Banner", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    background-color: $primary-color !important;
+    color: white !important;
+    width: 90px !important;
+    padding: 15px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+    -webkit-transition-duration: 0.3s !important;
+    -webkit-transition-property: box-shadow, transform !important;
+    transition-property: box-shadow, transform !important;
+
+    &:hover, :focus, :active {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
+        -webkit-transform: scale(1.1) !important;
+        transform: scale(1.0) !important;
     }
 }
