@@ -463,6 +463,16 @@ body {
             }
         }
     }
+    @media only screen and (max-width: 450px) {
+        article {
+            #bigdiv {
+                .img3 {
+                    max-width: 85vw;
+                }
+            }
+        }
+    }
+    
     @media only screen and (max-width: 375px) {
         article {
             #bigdiv {
@@ -491,15 +501,46 @@ body {
     @media only screen and (max-width: 335px) {
         article {
             #bigdiv {
-                .img3 {
-                    max-width: 60vw;
-                }
+                position: $rel;
+                right: 8px;
                 div {
-                    a {
-                        max-width: 90%;
+                    .img3 {
+                        max-width: 81vw;
+                    }
+                    div {
+                        a {
+                            max-width: 90%;
+                        }
                     }
                 }
             }
         }
     }
+        @media only screen and (max-width: 335px) {
+        article {
+            #bigdiv {
+                position: $rel;
+                right: 8px;
+                div {
+                    .img3 {
+                        max-width: 81vw;
+                    }
+                    div {
+                        a {
+                            max-width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 335px)  {
+        article {
+            #bigdiv {
+                position: $rel;
+                right: 10px;
+            }
+        }
+    }
+
 }
