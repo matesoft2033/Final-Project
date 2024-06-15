@@ -4,7 +4,7 @@
     font-weight: 500;
     background-color: $primary-color;
     color: white;
-    width: 90px;
+    max-width: 90px;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -61,4 +61,8 @@
         -webkit-transform: scale(1.1) !important;
         transform: scale(1.0) !important;
     }
+}
+@mixin img () {
+    max-width: $max-width;
+    height: $auto;
 }
