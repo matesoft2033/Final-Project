@@ -66,3 +66,18 @@
     max-width: $max-width;
     height: $auto;
 }
+@mixin h2 () {
+    color: #0b0b2c;
+    letter-spacing: 0.01em;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+@mixin p () {
+    color: #69697b;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.667em;
+}

@@ -168,6 +168,7 @@ body main .opening .div .btn1 {
   color: #3434ff;
   border: 1px solid #3434ff;
   transition: 0.5s;
+  padding-right: 22px !important;
 }
 body main .opening .div .btn1:hover, body main .opening .div .btn1 :focus, body main .opening .div .btn1 :active {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -743,5 +744,197 @@ body .card-container .card:hover {
 @media only screen and (max-width: 380px) {
   body .card-container .card .card-content a {
     display: none !important;
+  }
+}
+body .db {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+body .db .btn {
+  font-family: "BPG Banner", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3434ff;
+  color: white;
+  max-width: 90px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  max-width: 110px;
+  padding: 20px 24px;
+}
+body .db .btn:hover, body .db .btn :focus, body .db .btn :active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 420px) {
+  body .db .btn {
+    min-width: 80%;
+    transform: scale(0.9) !important;
+    font-size: 25px;
+  }
+}
+body .hr1 {
+  margin-top: 80px;
+}
+body .heading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  margin-top: 140px;
+}
+body .heading h2 {
+  color: #0b0b2c;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #3434ff;
+}
+body .heading p {
+  color: #69697b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+body .container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .container .wrapper1 {
+  text-align: center;
+  max-width: 100%;
+}
+body .container .wrapper1 img {
+  max-width: 300px;
+}
+body .container .wrapper1 h2 {
+  color: #0b0b2c;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2em;
+  font-size: 25px;
+}
+body .container .wrapper1 p {
+  color: #69697b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+body .container .wrapper1 a {
+  position: relative;
+  top: 50px;
+  font-family: "BPG Banner", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3434ff;
+  color: white;
+  max-width: 90px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  color: #3434ff;
+  border: 1px solid #3434ff;
+  transition: 0.5s;
+  border-radius: 3px;
+  max-width: 140px;
+}
+body .container .wrapper1 a:hover, body .container .wrapper1 a :focus, body .container .wrapper1 a :active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+body .container .wrapper1 a:hover, body .container .wrapper1 a :focus, body .container .wrapper1 a :active {
+  background-color: #3434ff;
+  color: white;
+  transition: 0.5s;
+}
+body .container .wrapper2 {
+  text-align: center;
+  max-width: 100%;
+  margin-left: 50px;
+}
+body .container .wrapper2 img {
+  max-width: 300px;
+}
+body .container .wrapper2 h2 {
+  color: #0b0b2c;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2em;
+  font-size: 25px;
+}
+body .container .wrapper2 p {
+  color: #69697b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+body .container .wrapper2 a {
+  position: relative;
+  top: 50px;
+  font-family: "BPG Banner", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3434ff;
+  color: white;
+  max-width: 90px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  color: #3434ff;
+  border: 1px solid #3434ff;
+  transition: 0.5s;
+  border-radius: 3px;
+  max-width: 140px;
+}
+body .container .wrapper2 a:hover, body .container .wrapper2 a :focus, body .container .wrapper2 a :active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+body .container .wrapper2 a:hover, body .container .wrapper2 a :focus, body .container .wrapper2 a :active {
+  background-color: #3434ff;
+  color: white;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 1115px) {
+  body .container .wrapper2 {
+    margin-right: 50px;
+    margin-top: 150px;
   }
 }

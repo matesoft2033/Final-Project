@@ -114,6 +114,7 @@ body {
                 }
                 .btn1 {
                     @include button2 ();
+                    padding-right: 22px !important;
                 }
             }
             img {
@@ -731,6 +732,97 @@ body {
                         display: none !important;
                     }
                 }
+            }
+        }
+    }
+    .db {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        .btn {
+            @include button;
+            max-width: 110px;
+            padding: 20px 24px;
+        }
+    }
+    @media only screen and (max-width: 420px) {
+        .db {
+            .btn {
+                min-width: 80%;
+                transform: scale(0.9) !important;
+                font-size: 25px;
+            }
+        }
+    }
+    .hr1 {
+        margin-top: 80px;
+    }
+    .heading {
+        display: $flex;
+        flex-direction: $direction;
+        flex-wrap: $wrap;
+        align-content: $cent;
+        text-align: $cent;
+        margin-top: 140px;
+        h2 {
+            @include h2;
+            font-weight: bold;
+            color: $primary-color
+        }
+        p {
+            @include p;
+        }
+    }
+    .container {
+        margin-top: 50px;
+        display: $flex;
+        justify-content: center;
+        flex-wrap: $wrap;
+        .wrapper1 {
+            text-align: $cent;
+            max-width: 100%;
+            img {
+                max-width: 300px;
+            }
+            h2 {
+                @include h2;
+                font-size: 25px;
+            }
+            p {
+                @include p;
+            }
+            a {
+                @include button2;
+                border-radius: 3px;
+                max-width: 140px;
+            }
+        }
+        .wrapper2 {
+            text-align: $cent;
+            max-width: 100%;
+            margin-left: 50px;
+            img {
+                max-width: 300px;
+            }
+            h2 {
+                @include h2;
+                font-size: 25px;
+            }
+            p {
+                @include p;
+            }
+            a {
+                @include button2;
+                border-radius: 3px;
+                max-width: 140px;
+            }
+        }
+    }
+    @media only screen and (max-width: 1115px) {
+        .container {
+            .wrapper2 {
+                margin-right: 50px;
+                margin-top: 150px;
             }
         }
     }
