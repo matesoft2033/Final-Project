@@ -1008,7 +1008,7 @@ body #about .text .button:hover, body #about .text .button :focus, body #about .
 body #about .image1 {
   position: relative;
   bottom: 60px;
-  max-width: 35vw;
+  max-width: 45vw;
   right: 30px;
 }
 body #about .image2 {
@@ -1068,4 +1068,75 @@ body #about .image2 {
     font-size: 30px;
     max-width: 100%;
   }
+}
+body footer #thebiggestdiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+body footer #thebiggestdiv img {
+  max-width: 25vw;
+  transition-duration: 0.4s;
+}
+body footer #thebiggestdiv img:hover, body footer #thebiggestdiv img :focus :active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body footer #thebiggestdiv #first {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body footer #thebiggestdiv #first h3 {
+  color: #3434ff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 1.111em;
+}
+body footer #thebiggestdiv #first a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #69697b;
+  margin-bottom: 15px;
+  transition-duration: 0.3s;
+}
+body footer #thebiggestdiv #first a:hover {
+  color: #3434ff;
+}
+body footer #thebiggestdiv #second {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body footer #thebiggestdiv #second h3 {
+  color: #3434ff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 1.111em;
+}
+body footer #thebiggestdiv #second a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #69697b;
+  margin-bottom: 15px;
+  transition-duration: 0.3s;
+}
+body footer #thebiggestdiv #second a:hover {
+  color: #3434ff;
+}
+body footer #thebiggestdiv #second #a7 {
+  color: #3434ff;
+  text-decoration: underline;
+  text-decoration-color: #3434ff;
+}
+body footer #thebiggestdiv #second #a7:hover {
+  color: #0b0b2c;
+  text-decoration: underline;
+  text-decoration-color: #0b0b2c;
 }

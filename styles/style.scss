@@ -887,7 +887,7 @@ body {
         .image1 {
             position: $rel;
             bottom: 60px;
-            max-width: 35vw;
+            max-width: 45vw;
             right: 30px;
         }
         .image2 {
@@ -959,5 +959,52 @@ body {
             }
         }
     }
+    footer {
+        #thebiggestdiv {
+            display: $flex;
+            justify-content: space-around;
+            margin-top: 90px;
+            img {
+                max-width: 25vw;
+                transition-duration: 0.4s;
+                &:hover, :focus :active {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+            #first {
+                display: $flex;
+                flex-direction: $direction;
+                margin-top: 40px;
+                h3 {
+                    @include h3;
+                }
+                a {
+                    @include a;
+                }
+            }
+            #second {
+                display: $flex;
+                flex-direction: $direction;
+                margin-top: 40px;
+                h3 {
+                    @include h3;
+                }
+                a {
+                    @include a;
+                }
+                #a7 {
+                    color: $primary-color;
+                    text-decoration: underline;
+                    text-decoration-color: $primary-color;
 
+                    &:hover {
+                        color: #0b0b2c;
+                        text-decoration: underline;
+                        text-decoration-color: #0b0b2c;
+                    }
+                }
+            }
+        }
+    }
 }
