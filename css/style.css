@@ -938,3 +938,134 @@ body .container .wrapper2 a:hover, body .container .wrapper2 a :focus, body .con
     margin-top: 150px;
   }
 }
+body #about {
+  display: flex;
+  max-width: 100%;
+  background-color: #3434ff;
+  box-shadow: 0 4px 8px rgba(52, 52, 255, 0.3);
+  position: relative;
+  top: 170px;
+  padding-left: 60px;
+  padding-top: 100px;
+}
+body #about .text {
+  max-width: 100%;
+}
+body #about .text h2 {
+  color: #0b0b2c;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #ffffff;
+  font-family: "ArchyEDT-Bold", sans-serif;
+}
+body #about .text p {
+  color: #69697b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+  color: #ffffff;
+  font-family: "BPG Mrgvlovani Caps", sans-serif;
+  font-weight: bold;
+  max-width: 48%;
+}
+body #about .text #p {
+  color: black;
+  font-family: "ArchyEDT-Bold", sans-serif;
+  font-size: 24px;
+  max-width: 100%;
+}
+body #about .text .p {
+  color: #00FFFF;
+}
+body #about .text .button {
+  font-family: "BPG Banner", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #3434ff;
+  max-width: 90px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  position: relative;
+  top: 45px;
+}
+body #about .text .button:hover, body #about .text .button :focus, body #about .text .button :active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  background-color: #3434ff;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+body #about .image1 {
+  position: relative;
+  bottom: 60px;
+  max-width: 35vw;
+  right: 30px;
+}
+body #about .image2 {
+  display: none;
+}
+@media only screen and (max-width: 1115px) {
+  body #about .text {
+    max-width: 50vw;
+  }
+  body #about .text p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  body #about .text #p {
+    font-size: 18px;
+  }
+  body #about .image1 {
+    max-width: 46vw;
+    max-height: 100vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body #about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body #about .text {
+    max-width: 690px;
+  }
+  body #about .image1 {
+    display: none;
+  }
+  body #about .image2 {
+    display: block;
+    min-width: 70%;
+    margin-right: 60px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body #about .text {
+    max-width: 75%;
+  }
+  body #about .text .button {
+    display: inline-block;
+    min-width: 100%;
+    transition-duration: 0.67s;
+  }
+}
+@media only screen and (max-width: 560px) {
+  body #about .button {
+    min-width: 70% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body #about .text h2 {
+    font-size: 30px;
+    max-width: 100%;
+  }
+}
