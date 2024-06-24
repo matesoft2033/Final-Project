@@ -1,0 +1,196 @@
+@import "resetstyle";
+@import "variables";
+@import "mixin";
+body {
+    background-color: $body-background-color;
+    header {
+        position: fixed;
+        display: $flex;
+        align-items: $cent;
+        justify-content: space-around;
+        width: 100%;
+        height: 10vh;
+        background-color: $header-background-color;
+        z-index: 1;
+        div {
+            display: $flex;
+            align-items: $cent;
+            img {
+                transform: scale(1);
+                transition: transform 0.5s ease;
+                max-width: 20vw;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+                @media only screen and (max-width: 990px) {
+                    max-width: 18vw;
+                }
+            }
+            nav {
+                margin-left: 80px;
+                .a1 {
+                    color: $primary-color;
+                }
+                a {
+                    text-decoration: $none;
+                    font-family: $font-fam;
+                    margin-right: 25px;
+                    color: $a-color;
+
+                    &.a2,
+                    &.a3,
+                    &.a4,
+                    &.a5 {
+                        transition: color 0.3s ease;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            @include button ();
+        }
+        .fa.fa-bars {
+            display: $none;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        nav {
+            display: $none;
+        }
+        header {
+            display: $flex;
+            justify-content: space-between;
+            z-index: 1;
+            div {
+                img {
+                    max-width: 25vw;
+                }
+            }
+            .div1 {
+                display: $flex;
+                #spacer {
+                    width: 60px;
+                }
+            }
+        }
+        .fa.fa-bars {
+            display: $inblock !important;
+            font-size: 35px;
+            position: $rel;
+            right: 30px;
+        }
+    }
+    @media only screen and (max-width: 1115px) {
+        header {
+            div {
+                img {
+                    max-width: 25vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1002px) {
+        header {
+            div {
+                img {
+                    max-width: 30vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 840px) {
+        header {
+            div {
+                img {
+                    max-width: 35vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 715px) {
+        header {
+            div {
+                img {
+                    max-width: 40vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 625px) {
+        header {
+            div {
+                img {
+                    max-width: 50vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        header {
+            div {
+                img {
+                    max-width: 56vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 450px) {
+        header {
+            div {
+                img {
+                    max-width: 65vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 385px) {
+        header {
+            div {
+                img {
+                    max-width: 67vw;
+                }
+            }
+        }
+    }
+    .div {
+        position: $rel;
+        top: 150px;
+        text-align: $cent;
+        .h1 {
+            color: $primary-color;
+            letter-spacing: .01em;
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 1.115em;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #69697b;
+            font-family: "BPG No9", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.667em;
+        }
+        a {
+            @include button2 ();
+            font-size: 20px;
+        }
+        hr {
+            margin-bottom: 40px;
+        }
+    }
+    @media only screen and (max-width: 990px) {
+        .div {
+            .h1 {
+
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

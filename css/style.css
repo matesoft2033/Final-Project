@@ -1069,6 +1069,9 @@ body #about .image2 {
     max-width: 100%;
   }
 }
+body footer {
+  background-color: #222222;
+}
 body footer #thebiggestdiv {
   display: flex;
   justify-content: space-around;
@@ -1139,4 +1142,36 @@ body footer #thebiggestdiv #second #a7:hover {
   color: #0b0b2c;
   text-decoration: underline;
   text-decoration-color: #0b0b2c;
+}
+@media only screen and (max-width: 990px) {
+  body footer #thebiggestdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  body footer #thebiggestdiv img {
+    max-width: 35vw;
+  }
+}
+@media only screen and (max-width: 720px) {
+  body footer #thebiggestdiv img {
+    max-width: 40vw;
+  }
+}
+@media only screen and (max-width: 630px) {
+  body footer #thebiggestdiv img {
+    max-width: 45vw;
+  }
+}
+@media only screen and (max-width: 530px) {
+  body footer #thebiggestdiv img {
+    max-width: 50vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body footer #thebiggestdiv img {
+    max-width: 55vw;
+  }
 }
