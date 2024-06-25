@@ -355,4 +355,285 @@ body {
             }
         }
     }
+    #header {
+        margin-top: 150px;
+        display: $flex;
+        flex-direction: $direction;
+        text-align: $cent;
+        h1 {
+            color: #0b0b2c;
+            letter-spacing: .01em;
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 1.115em;
+            margin-bottom: 20px;
+            font-family: "ArchyEDT-Bold", sans-serif;
+        }
+        p {
+            @include p;
+            font-size: 25px;
+            font-family: "ArchyEDT-Bold", sans-serif;
+        }
+    }
+        .container {
+        margin-top: 100px;
+        display: $flex;
+        text-align: $cent;
+        #contentt {
+            display: $flex;
+            max-width: 80vw;
+            align-items: baseline;
+            .card1 {
+                display: $flex;
+                flex-direction: $direction;
+                flex-wrap: wrap;
+                align-content: center;
+                img {
+                    max-width: 70%;
+                    border-radius: 100%;
+                    align-self: $cent;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+                h2 {
+                    margin-top: 25px;
+                    font-family: "BPG Banner SuperSquare Caps", sans-serif;
+                    transition-duration: 0.3s;
+                    &:hover, :focus, :active {
+                        cursor: pointer;
+                        color: $primary-color;
+                    }
+                }
+                #p {
+                    font-family: "ALK Sanet", sans-serif;
+                    font-size: 18px;
+                    color: $primary-color;
+                    margin-top: 7px;
+                    margin-bottom: 10px;
+                }
+                .p2 {
+                    font-family: "ALK Sanet", sans-serif;
+                    font-size: 18px;
+                    color: #69697b;
+                    max-width: 24vw;
+                }
+            }
+            .card2 {
+                display: $flex;
+                flex-direction: $direction;
+                margin-left: 60px;
+                margin-right: 60px;
+                max-width: max-content;
+                img {
+                    max-width: 50%;
+                    border-radius: 100%;
+                    align-self: center;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+                h2 {
+                    margin-top: 25px;
+                    font-family: "BPG Banner SuperSquare Caps", sans-serif;
+                    transition-duration: 0.3s;
+                    &:hover, :focus, :active {
+                        cursor: pointer;
+                        color: $primary-color;
+                    }
+                }
+                #p {
+                    font-family: "ALK Sanet", sans-serif;
+                    font-size: 18px;
+                    color: $primary-color;
+                    margin-top: 7px;
+                    margin-bottom: 10px;
+                }
+                .p2 {
+                    font-family: "ALK Sanet", sans-serif;
+                    font-size: 18px;
+                    color: #69697b;
+                    align-self: center;
+                    max-width: 24vw;
+                }
+            }
+            .card3 {
+                img {
+                    max-width: 70%;
+                    border-radius: 100%;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+                h2 {
+                    margin-top: 25px;
+                    font-family: "BPG Banner SuperSquare Caps", sans-serif;
+                    transition-duration: 0.3s;
+                    &:hover, :focus, :active {
+                        cursor: pointer;
+                        color: $primary-color;
+                    }
+                }
+                #p {
+                    font-family: "ALK Sanet", sans-serif;
+                    font-size: 18px;
+                    color: $primary-color;
+                    margin-top: 7px;
+                    margin-bottom: 10px;
+                }
+                .p3 {
+                    font-family: "ALK Sanet", sans-serif;
+                    font-size: 18px;
+                    color: #69697b;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1115px) {
+        .container {
+            #contentt {
+                .card1 {
+                    h2 {
+                        max-width: 50vw;
+                    }
+                    img {
+                        max-width: 20vw;
+                    }
+                }
+                .card2 {
+                    margin-left: 100px;
+                    img {
+                        max-width: 20vw;
+                    }
+                }
+                .card3 {
+                    img {
+                        max-width: 20vw;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1081px) {
+        .container {
+            #contentt {
+                font-size: 20px;
+            }
+        }
+    }
+    @media only screen and (max-width: 1005px) {
+        .container {
+            #contentt {
+                .card2 {
+                    margin-right: 90px !important;
+                }
+                p {
+                    max-width: 34vw !important;
+                }
+                .p3 {
+                    max-width: 25vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 796px) {
+        .container {
+            #contentt {
+                display: $flex;
+                flex-direction: $direction;
+                .card1 {
+                    margin-bottom: 40px;
+                    img {
+                        max-width: 30vw;
+                    }
+                }
+                .card2 {
+                    margin-bottom: 40px;
+                    img {
+                        max-width: 30vw;
+                    }
+                }
+                .card3 {
+                    margin: 0 auto;
+                    p {
+                        margin: 0 auto;
+                    }
+                    img {
+                        max-width: 30vw;
+                    }
+                }
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 720px) {
+        .container {
+            #contentt  {
+                .card1 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    position: relative;
+                    right: 17px;
+                    img {
+                        max-width: 40vw;
+                    }
+                }
+                .card2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    img {
+                        max-width: 40vw;
+                    }
+                }
+                .card3 {
+                    img {
+                        max-width: 40vw;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 540px) {
+        .container {
+            #contentt {
+                .card1 {
+                    img {
+                        max-width: 45vw;
+                    }
+                }
+                .card2 {
+                    h2 {
+                        max-width: 42vw;
+                    }
+                    img {
+                        max-width: 45vw;
+                    }
+                }
+                .card3 {
+                    margin-left: 104px;
+                    h2 {
+                        max-width: 42vw;
+                    }
+                    img {
+                        max-width: 45vw;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 440px) {
+        .container {
+            margin-right: 50px;
+        }
+    }
 }
