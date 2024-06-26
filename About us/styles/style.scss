@@ -636,4 +636,166 @@ body {
             margin-right: 50px;
         }
     }
+    .big {
+        margin-top: 140px;
+        display: $flex;
+        flex-direction: $direction;
+        flex-wrap: wrap;
+        align-content: $cent;
+        text-align: $cent;
+        .txt {
+            max-width: 50%;
+            background-color: #e6e6fa;
+            border-radius: 20px;
+            padding: 110px;
+            h1 {
+                color: #0b0b2c;
+                font-family: "BPG WEB 002 Caps", sans-serif;
+                font-size: 25px;
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+            p {
+                font-family: "ALK Life", sans-serif;
+                color: #69697b;
+                font-size: 19px;
+                line-height: 1.667em;
+            }
+            a {
+                @include button2;
+                bottom: 20px;
+            }
+        }
+    }
+    
+    footer {
+        background-color: #222222;
+        margin-top: 100px;
+        #thebiggestdiv {
+            display: $flex;
+            justify-content: space-around;
+            margin-top: 90px;
+                img {
+                    max-width: 25vw;
+                    transition-duration: 0.4s;
+                    &:hover, :focus :active {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+            #first {
+                display: $flex;
+                flex-direction: $direction;
+                margin-top: 40px;
+                h3 {
+                    @include h3;
+                }
+                a {
+                    @include a;
+                }
+            }
+            #second {
+                display: $flex;
+                flex-direction: $direction;
+                margin-top: 40px;
+                h3 {
+                    @include h3;
+                }
+                a {
+                    @include a;
+                }
+                #a7 {
+                    color: $primary-color;
+                    text-decoration: underline;
+                    text-decoration-color: $primary-color;
+
+                    &:hover {
+                        color: #0b0b2c;
+                        text-decoration: underline;
+                        text-decoration-color: #0b0b2c;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 990px) {
+        footer {
+            #thebiggestdiv {
+                display: $flex;
+                flex-direction: column-reverse;
+                align-content: $cent;
+                flex-wrap: wrap;
+                text-align: $cent;
+                img {
+                    max-width: 35vw;
+                    
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 720px) {
+        footer {
+            #thebiggestdiv {
+                img {
+                    max-width: 40vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 630px) {
+        footer {
+            #thebiggestdiv {
+                img {
+                    max-width: 45vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 530px) {
+        footer {
+            #thebiggestdiv {
+                img {
+                    max-width: 50vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 450px) {
+        footer {
+            #thebiggestdiv {
+                img {
+                    max-width: 55vw;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 729px) {
+        .big {
+            .txt {
+                padding-top: 30px;
+                h1 {
+                    font-size: 21px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 454px) {
+        .big {
+            .txt {
+                a {
+                    display: inline-table;
+                }
+                h1 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

@@ -604,3 +604,194 @@ body .container #contentt .card3 .p3 {
     margin-right: 50px;
   }
 }
+body .big {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+}
+body .big .txt {
+  max-width: 50%;
+  background-color: #e6e6fa;
+  border-radius: 20px;
+  padding: 110px;
+}
+body .big .txt h1 {
+  color: #0b0b2c;
+  font-family: "BPG WEB 002 Caps", sans-serif;
+  font-size: 25px;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+body .big .txt p {
+  font-family: "ALK Life", sans-serif;
+  color: #69697b;
+  font-size: 19px;
+  line-height: 1.667em;
+}
+body .big .txt a {
+  position: relative;
+  top: 50px;
+  font-family: "BPG Banner", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3434ff;
+  color: white;
+  max-width: 90px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  color: #3434ff;
+  border: 1px solid #3434ff;
+  transition: 0.5s;
+  bottom: 20px;
+}
+body .big .txt a:hover, body .big .txt a :focus, body .big .txt a :active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+body .big .txt a:hover, body .big .txt a :focus, body .big .txt a :active {
+  background-color: #3434ff;
+  color: white;
+  transition: 0.5s;
+}
+body footer {
+  background-color: #222222;
+  margin-top: 100px;
+}
+body footer #thebiggestdiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+body footer #thebiggestdiv img {
+  max-width: 25vw;
+  transition-duration: 0.4s;
+}
+body footer #thebiggestdiv img:hover, body footer #thebiggestdiv img :focus :active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body footer #thebiggestdiv #first {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body footer #thebiggestdiv #first h3 {
+  color: #3434ff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 1.111em;
+}
+body footer #thebiggestdiv #first a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #69697b;
+  margin-bottom: 15px;
+  transition-duration: 0.3s;
+}
+body footer #thebiggestdiv #first a:hover {
+  color: #3434ff;
+}
+body footer #thebiggestdiv #second {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body footer #thebiggestdiv #second h3 {
+  color: #3434ff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 1.111em;
+}
+body footer #thebiggestdiv #second a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #69697b;
+  margin-bottom: 15px;
+  transition-duration: 0.3s;
+}
+body footer #thebiggestdiv #second a:hover {
+  color: #3434ff;
+}
+body footer #thebiggestdiv #second #a7 {
+  color: #3434ff;
+  text-decoration: underline;
+  text-decoration-color: #3434ff;
+}
+body footer #thebiggestdiv #second #a7:hover {
+  color: #0b0b2c;
+  text-decoration: underline;
+  text-decoration-color: #0b0b2c;
+}
+@media only screen and (max-width: 990px) {
+  body footer #thebiggestdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  body footer #thebiggestdiv img {
+    max-width: 35vw;
+  }
+}
+@media only screen and (max-width: 720px) {
+  body footer #thebiggestdiv img {
+    max-width: 40vw;
+  }
+}
+@media only screen and (max-width: 630px) {
+  body footer #thebiggestdiv img {
+    max-width: 45vw;
+  }
+}
+@media only screen and (max-width: 530px) {
+  body footer #thebiggestdiv img {
+    max-width: 50vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body footer #thebiggestdiv img {
+    max-width: 55vw;
+  }
+}
+@media only screen and (max-width: 729px) {
+  body .big .txt {
+    padding-top: 30px;
+  }
+  body .big .txt h1 {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  body .big .txt p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 454px) {
+  body .big .txt a {
+    display: inline-table;
+  }
+  body .big .txt h1 {
+    font-size: 18px;
+  }
+  body .big .txt p {
+    font-size: 16px;
+  }
+}
