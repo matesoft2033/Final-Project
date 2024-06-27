@@ -187,6 +187,8 @@ body .div a {
   border: 1px solid #3434ff;
   transition: 0.5s;
   font-size: 20px;
+  white-space: nowrap;
+  max-width: 100%;
 }
 body .div a:hover, body .div a :focus, body .div a :active {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);

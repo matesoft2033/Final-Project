@@ -181,6 +181,8 @@ body {
         a {
             @include button2 ();
             font-size: 20px;
+            white-space: nowrap;
+            max-width: 100%;
         }
         hr {
             margin-bottom: 40px;
