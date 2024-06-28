@@ -1144,6 +1144,31 @@ body footer #thebiggestdiv #second #a7:hover {
   text-decoration: underline;
   text-decoration-color: #0b0b2c;
 }
+body footer .map {
+  display: flex;
+  justify-content: flex-end;
+}
+body footer .map iframe {
+  border-radius: 2em;
+  border: none;
+  margin-bottom: 40px;
+  margin-right: 50px;
+  width: 500px;
+  height: 500px;
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}
+body footer .map iframe:hover {
+  opacity: 1;
+}
+@media only screen and (max-width: 1115px) {
+  body footer .map {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+}
 @media only screen and (max-width: 990px) {
   body footer #thebiggestdiv {
     display: flex;
@@ -1164,6 +1189,17 @@ body footer #thebiggestdiv #second #a7:hover {
 @media only screen and (max-width: 630px) {
   body footer #thebiggestdiv img {
     max-width: 45vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body footer .map {
+    margin: 0 auto;
+  }
+  body footer .map iframe {
+    margin-top: 40px;
+    width: 300px;
+    height: 350px;
+    margin-left: 50px;
   }
 }
 @media only screen and (max-width: 530px) {

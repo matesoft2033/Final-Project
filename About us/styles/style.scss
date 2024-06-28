@@ -718,7 +718,25 @@ body {
                     }
                 }
             }
+            .map {
+                display: $flex;
+                justify-content: flex-end;
+                iframe {
+                    border-radius: 2em;
+                    border: none;
+                    margin-bottom: 40px;
+                    margin-right: 50px;
+                    width: 500px;
+                    height: 500px;
+                    transition: 0.3s ease-in-out;
+                    opacity: 0.7;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
         }
+
     }
     @media only screen and (max-width: 990px) {
         footer {

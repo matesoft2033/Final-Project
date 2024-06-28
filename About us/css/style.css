@@ -742,6 +742,23 @@ body footer #thebiggestdiv #second #a7:hover {
   text-decoration: underline;
   text-decoration-color: #0b0b2c;
 }
+body footer #thebiggestdiv .map {
+  display: flex;
+  justify-content: flex-end;
+}
+body footer #thebiggestdiv .map iframe {
+  border-radius: 2em;
+  border: none;
+  margin-bottom: 40px;
+  margin-right: 50px;
+  width: 500px;
+  height: 500px;
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}
+body footer #thebiggestdiv .map iframe:hover {
+  opacity: 1;
+}
 @media only screen and (max-width: 990px) {
   body footer #thebiggestdiv {
     display: flex;

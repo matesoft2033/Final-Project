@@ -1008,6 +1008,33 @@ body {
                 }
             }
         }
+        .map {
+            display: $flex;
+            justify-content: flex-end;
+            iframe {
+                border-radius: 2em;
+                border: none;
+                margin-bottom: 40px;
+                margin-right: 50px;
+                width: 500px;
+                height: 500px;
+                transition: 0.3s ease-in-out;
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1115px) {
+        footer {
+            .map {
+                display: $flex;
+                justify-content: $cent;
+                margin-left: 50px;  
+                margin-top: 40px;              
+            }
+        }
     }
     @media only screen and (max-width: 990px) {
         footer {
@@ -1042,6 +1069,19 @@ body {
             }
         }
     }
+    @media only screen and (max-width: 600px) {
+        footer {
+            .map {
+                margin: 0 auto;
+                iframe {
+                    margin-top: 40px;
+                    width: 300px;
+                    height: 350px;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
     @media only screen and (max-width: 530px) {
         footer {
             #thebiggestdiv {
@@ -1060,4 +1100,5 @@ body {
             }
         }
     }
+
 }
