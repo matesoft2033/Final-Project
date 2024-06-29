@@ -149,6 +149,8 @@ body {
         section {
             display: $flex;
             flex-direction: $direction;
+            top: 200px;
+            right: 25px;
             .head {
                 position: relative;
                 bottom: 55px;
@@ -170,12 +172,4 @@ body {
             }
         }
     } 
-    @media only screen and (max-width: 670px) {
-        section {
-            margin: 0 auto;
-            img {
-                align-self: center;
-            }
-        }
-    }
 }

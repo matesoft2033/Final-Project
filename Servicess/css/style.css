@@ -155,6 +155,8 @@ body section img {
   body section {
     display: flex;
     flex-direction: column;
+    top: 200px;
+    right: 25px;
   }
   body section .head {
     position: relative;
@@ -174,14 +176,6 @@ body section img {
     min-width: 90%;
     -o-object-fit: cover;
        object-fit: cover;
-    align-self: center;
-  }
-}
-@media only screen and (max-width: 670px) {
-  body section {
-    margin: 0 auto;
-  }
-  body section img {
     align-self: center;
   }
 }
