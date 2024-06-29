@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,25 +12,42 @@
 
 body header {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   height: 10vh;
   background-color: lightgray;
   z-index: 1;
 }
 body header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body header div img {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   max-width: 20vw;
 }
 body header div img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media only screen and (max-width: 990px) {
   body header div img {
@@ -43,6 +67,8 @@ body header div nav a {
   color: white;
 }
 body header div nav a.a2, body header div nav a.a3, body header div nav a.a4, body header div nav a.a5 {
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 body header div nav a.a2:hover, body header div nav a.a3:hover, body header div nav a.a4:hover, body header div nav a.a5:hover {
@@ -61,13 +87,21 @@ body header .btn {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
 body header .btn:hover, body header .btn :focus, body header .btn :active {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 body header .fa.fa-bars {
   display: none;
@@ -77,14 +111,20 @@ body header .fa.fa-bars {
     display: none;
   }
   body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     z-index: 1;
   }
   body header div img {
     max-width: 25vw;
   }
   body header .div1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   body header .div1 #spacer {
@@ -101,8 +141,12 @@ body section {
   position: relative;
   top: 150px;
   margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1190px;
 }
 body section .head h1 {
@@ -157,8 +201,13 @@ body hr {
 }
 @media only screen and (max-width: 1024px) {
   body section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: 200px;
     right: 25px;
   }
@@ -180,7 +229,9 @@ body hr {
     min-width: 90%;
     -o-object-fit: cover;
        object-fit: cover;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   body hr {
     top: 220px;
@@ -271,9 +322,14 @@ body #hh1 {
   font-size: 30px;
 }
 body .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 400px;
   margin-bottom: 200px;
 }
@@ -282,9 +338,14 @@ body .card-container .card {
   background-color: #ffffff;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin: 20px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 body .card-container .card #python {
   max-width: 100%;
@@ -357,6 +418,8 @@ body .card-container .card .card-content h2 {
 body .card-container .card .card-content h2:hover {
   color: #3434ff;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 body .card-container .card .card-content p {
@@ -372,6 +435,8 @@ body .card-container .card .card-content i {
 body .card-container .card .card-content span {
   font-size: 18px;
   margin-left: 10px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 body .card-container .card .card-content span:hover {
@@ -380,6 +445,8 @@ body .card-container .card .card-content span:hover {
 }
 body .card-container .card .card-content .span {
   font-size: 18px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
   position: relative;
   left: 6px;
@@ -404,13 +471,20 @@ body .card-container .card .card-content a {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   color: #3434ff;
   border: 1px solid #3434ff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   top: 0;
   bottom: 8px;
@@ -420,12 +494,17 @@ body .card-container .card .card-content a {
   max-width: 110px;
 }
 body .card-container .card .card-content a:hover, body .card-container .card .card-content a :focus, body .card-container .card .card-content a :active {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 body .card-container .card .card-content a:hover, body .card-container .card .card-content a :focus, body .card-container .card .card-content a :active {
   background-color: #3434ff;
   color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 body .card-container .card .card-content .a1 {
@@ -435,7 +514,9 @@ body .card-container .card .card-content .a6 {
   left: 56px;
 }
 body .card-container .card:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media only screen and (max-width: 420px) {
   body .card-container .card .card-content a {
@@ -453,21 +534,33 @@ body footer {
   margin-top: 100px;
 }
 body footer #thebiggestdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 90px;
 }
 body footer #thebiggestdiv img {
   max-width: 25vw;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 body footer #thebiggestdiv img:hover, body footer #thebiggestdiv img :focus :active {
   cursor: pointer;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 body footer #thebiggestdiv #first {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 40px;
 }
 body footer #thebiggestdiv #first h3 {
@@ -484,14 +577,21 @@ body footer #thebiggestdiv #first a {
   text-decoration: none;
   color: #69697b;
   margin-bottom: 15px;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 body footer #thebiggestdiv #first a:hover {
   color: #3434ff;
 }
 body footer #thebiggestdiv #second {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 40px;
 }
 body footer #thebiggestdiv #second h3 {
@@ -508,7 +608,9 @@ body footer #thebiggestdiv #second a {
   text-decoration: none;
   color: #69697b;
   margin-bottom: 15px;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 body footer #thebiggestdiv #second a:hover {
   color: #3434ff;
@@ -516,16 +618,22 @@ body footer #thebiggestdiv #second a:hover {
 body footer #thebiggestdiv #second #a7 {
   color: #3434ff;
   text-decoration: underline;
-  text-decoration-color: #3434ff;
+  -webkit-text-decoration-color: #3434ff;
+          text-decoration-color: #3434ff;
 }
 body footer #thebiggestdiv #second #a7:hover {
   color: #0b0b2c;
   text-decoration: underline;
-  text-decoration-color: #0b0b2c;
+  -webkit-text-decoration-color: #0b0b2c;
+          text-decoration-color: #0b0b2c;
 }
 body footer .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 body footer .map iframe {
   border-radius: 2em;
@@ -534,6 +642,8 @@ body footer .map iframe {
   margin-right: 50px;
   width: 500px;
   height: 500px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   opacity: 0.7;
 }
@@ -542,18 +652,29 @@ body footer .map iframe:hover {
 }
 @media only screen and (max-width: 1115px) {
   body footer .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 50px;
     margin-top: 40px;
   }
 }
 @media only screen and (max-width: 990px) {
   body footer #thebiggestdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
   }
   body footer #thebiggestdiv img {
