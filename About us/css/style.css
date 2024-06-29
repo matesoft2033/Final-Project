@@ -503,7 +503,7 @@ body .container #contentt .card1 h2:hover, body .container #contentt .card1 h2 :
   cursor: pointer;
   color: #3434ff;
 }
-body .container #contentt .card1 #p {
+body .container #contentt .card1 .p {
   font-family: "ALK Sanet", sans-serif;
   font-size: 18px;
   color: #3434ff;
@@ -557,7 +557,7 @@ body .container #contentt .card2 h2:hover, body .container #contentt .card2 h2 :
   cursor: pointer;
   color: #3434ff;
 }
-body .container #contentt .card2 #p {
+body .container #contentt .card2 .p {
   font-family: "ALK Sanet", sans-serif;
   font-size: 18px;
   color: #3434ff;
@@ -597,7 +597,7 @@ body .container #contentt .card3 h2:hover, body .container #contentt .card3 h2 :
   cursor: pointer;
   color: #3434ff;
 }
-body .container #contentt .card3 #p {
+body .container #contentt .card3 .p {
   font-family: "ALK Sanet", sans-serif;
   font-size: 18px;
   color: #3434ff;

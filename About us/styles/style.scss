@@ -409,7 +409,7 @@ body {
                         color: $primary-color;
                     }
                 }
-                #p {
+                .p {
                     font-family: "ALK Sanet", sans-serif;
                     font-size: 18px;
                     color: $primary-color;
@@ -448,7 +448,7 @@ body {
                         color: $primary-color;
                     }
                 }
-                #p {
+                .p {
                     font-family: "ALK Sanet", sans-serif;
                     font-size: 18px;
                     color: $primary-color;
@@ -482,7 +482,7 @@ body {
                         color: $primary-color;
                     }
                 }
-                #p {
+                .p {
                     font-family: "ALK Sanet", sans-serif;
                     font-size: 18px;
                     color: $primary-color;
@@ -562,16 +562,16 @@ body {
                     }
                 }
                 .card3 {
-                    margin: 0 auto;
+                    margin: 0 $auto;
                     p {
-                        margin: 0 auto;
+                        margin: 0 $auto;
                     }
                     img {
                         max-width: 30vw;
                     }
                 }
                 img {
-                    margin: 0 auto;
+                    margin: 0 $auto;
                 }
             }
         }

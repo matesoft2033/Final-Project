@@ -604,7 +604,7 @@ body {
                 min-width: 90vw;
             }
             .btn1 {
-                margin: 0 auto;
+                margin: 0 $auto;
             }
         }
     }
@@ -684,7 +684,7 @@ body {
                     transition: 0.3s ease;
                     position: relative;
                     left: 6px;
-                    margin: 0 auto;
+                    margin: 0 $auto;
                     &:hover {
                         color: red;
                         cursor: pointer;
@@ -1072,7 +1072,7 @@ body {
     @media only screen and (max-width: 600px) {
         footer {
             .map {
-                margin: 0 auto;
+                margin: 0 $auto;
                 iframe {
                     margin-top: 40px;
                     width: 300px;
