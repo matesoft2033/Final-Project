@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -15,42 +8,25 @@ body {
 }
 body header {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 10vh;
   background-color: lightgray;
   z-index: 1;
 }
 body header div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 body header div img {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
+  transform: scale(1);
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   max-width: 20vw;
 }
 body header div img:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media only screen and (max-width: 990px) {
   body header div img {
@@ -70,8 +46,6 @@ body header div nav a {
   color: white;
 }
 body header div nav a.a2, body header div nav a.a3, body header div nav a.a4, body header div nav a.a5 {
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 body header div nav a.a2:hover, body header div nav a.a3:hover, body header div nav a.a4:hover, body header div nav a.a5:hover {
@@ -90,21 +64,13 @@ body header .btn {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
 body header .btn:hover, body header .btn :focus, body header .btn :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body header .fa.fa-bars {
   display: none;
@@ -114,20 +80,14 @@ body header .fa.fa-bars {
     display: none;
   }
   body header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     z-index: 1;
   }
   body header div img {
     max-width: 25vw;
   }
   body header .div1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   body header .div1 #spacer {
@@ -143,12 +103,8 @@ body header .fa.fa-bars {
 body main .opening {
   padding-top: 200px;
   padding-left: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 body main .opening .div h1 {
   letter-spacing: 0.01em;
@@ -180,22 +136,14 @@ body main .opening .div .btn {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   padding: 20px;
 }
 body main .opening .div .btn:hover, body main .opening .div .btn :focus, body main .opening .div .btn :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body main .opening .div .btn1 {
   position: relative;
@@ -212,35 +160,23 @@ body main .opening .div .btn1 {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   color: #3434ff;
   border: 1px solid #3434ff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   padding-right: 22px !important;
 }
 body main .opening .div .btn1:hover, body main .opening .div .btn1 :focus, body main .opening .div .btn1 :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body main .opening .div .btn1:hover, body main .opening .div .btn1 :focus, body main .opening .div .btn1 :active {
   background-color: #3434ff;
   color: white;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 body main .opening img {
@@ -248,11 +184,9 @@ body main .opening img {
   right: 20px;
   max-width: 440px;
   max-height: -moz-max-content;
-  max-height: -webkit-max-content;
   max-height: max-content;
   border-radius: 30px;
-  -webkit-box-shadow: -5px 26px 20px 0px rgba(0, 0, 0, 0.52);
-          box-shadow: -5px 26px 20px 0px rgba(0, 0, 0, 0.52);
+  box-shadow: -5px 26px 20px 0px rgba(0, 0, 0, 0.52);
 }
 @media only screen and (max-width: 997px) {
   body header div img {
@@ -319,8 +253,6 @@ body article {
   margin-top: 350px;
 }
 body article #bigdiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 @media only screen and (max-width: 1097px) {
@@ -332,8 +264,7 @@ body article #bigdiv .img2 {
   max-width: 49%;
   max-height: 390px;
   margin-left: 60px;
-  -webkit-box-shadow: 0 60px 80px rgba(0, 0, 0, 0.6), 0 45px 26px rgba(0, 0, 0, 0.14);
-          box-shadow: 0 60px 80px rgba(0, 0, 0, 0.6), 0 45px 26px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 60px 80px rgba(0, 0, 0, 0.6), 0 45px 26px rgba(0, 0, 0, 0.14);
   border-radius: 18px;
 }
 body article #bigdiv .img3 {
@@ -372,50 +303,31 @@ body article #bigdiv div .btn {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   color: #3434ff;
   border: 1px solid #3434ff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   display: inline-block;
 }
 body article #bigdiv div .btn:hover, body article #bigdiv div .btn :focus, body article #bigdiv div .btn :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body article #bigdiv div .btn:hover, body article #bigdiv div .btn :focus, body article #bigdiv div .btn :active {
   background-color: #3434ff;
   color: white;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 @media only screen and (max-width: 1024px) {
   body main .opening {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
   }
   body main .opening div {
     text-align: center;
@@ -428,17 +340,10 @@ body article #bigdiv div .btn:hover, body article #bigdiv div .btn :focus, body 
     margin-left: 40px;
   }
   body article #bigdiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     bottom: 30px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    align-items: baseline;
   }
   body article #bigdiv .img2 {
     display: none;
@@ -448,8 +353,7 @@ body article #bigdiv div .btn:hover, body article #bigdiv div .btn :focus, body 
     max-height: 64vh;
     max-width: 90vw;
     border-radius: 18px;
-    -webkit-box-shadow: 0 14px 54px rgba(11, 11, 44, 0.22);
-            box-shadow: 0 14px 54px rgba(11, 11, 44, 0.22);
+    box-shadow: 0 14px 54px rgba(11, 11, 44, 0.22);
     position: relative;
     right: 14px;
   }
@@ -530,21 +434,13 @@ body article #bigdiv div .btn:hover, body article #bigdiv div .btn :focus, body 
     text-transform: uppercase !important;
     border-radius: 8px !important;
     cursor: pointer !important;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
     -webkit-transition-duration: 0.3s !important;
-    -webkit-transition-property: -webkit-box-shadow, -webkit-transform !important;
-    transition-property: -webkit-box-shadow, -webkit-transform !important;
-    -o-transition-property: box-shadow, transform !important;
     transition-property: box-shadow, transform !important;
-    transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform !important;
   }
   body article #bigdiv div a:hover, body article #bigdiv div a :focus, body article #bigdiv div a :active {
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
-    -webkit-transform: scale(1) !important;
-        -ms-transform: scale(1) !important;
-            transform: scale(1) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
+    transform: scale(1) !important;
   }
 }
 @media only screen and (max-width: 436px) {
@@ -609,17 +505,10 @@ body hr {
   margin-top: 170px;
 }
 body .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 60px;
@@ -654,55 +543,34 @@ body .section .btn1 {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   color: #3434ff;
   border: 1px solid #3434ff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   margin-right: 130px;
   max-width: -moz-max-content !important;
-  max-width: -webkit-max-content !important;
   max-width: max-content !important;
 }
 body .section .btn1:hover, body .section .btn1 :focus, body .section .btn1 :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body .section .btn1:hover, body .section .btn1 :focus, body .section .btn1 :active {
   background-color: #3434ff;
   color: white;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 @media only screen and (max-width: 900px) {
   body .section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
   }
   body .section .btn1 {
     top: 30px;
@@ -710,8 +578,6 @@ body .section .btn1:hover, body .section .btn1 :focus, body .section .btn1 :acti
 }
 @media only screen and (max-width: 700px) {
   body .section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-left: 15px;
   }
@@ -728,14 +594,9 @@ body .section .btn1:hover, body .section .btn1 :focus, body .section .btn1 :acti
   }
 }
 body .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 100px;
 }
 body .card-container .card {
@@ -743,14 +604,9 @@ body .card-container .card {
   background-color: #ffffff;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   margin: 20px;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 body .card-container .card #python {
   max-width: 100%;
@@ -799,8 +655,6 @@ body .card-container .card .card-content h2 {
 body .card-container .card .card-content h2:hover {
   color: #3434ff;
   cursor: pointer;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 body .card-container .card .card-content p {
@@ -816,8 +670,6 @@ body .card-container .card .card-content i {
 body .card-container .card .card-content span {
   font-size: 18px;
   margin-left: 10px;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 body .card-container .card .card-content span:hover {
@@ -826,8 +678,6 @@ body .card-container .card .card-content span:hover {
 }
 body .card-container .card .card-content .span {
   font-size: 18px;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
   transition: 0.3s ease;
   position: relative;
   left: 6px;
@@ -852,20 +702,13 @@ body .card-container .card .card-content a {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   color: #3434ff;
   border: 1px solid #3434ff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   top: 0;
   bottom: 8px;
@@ -875,17 +718,12 @@ body .card-container .card .card-content a {
   max-width: 110px;
 }
 body .card-container .card .card-content a:hover, body .card-container .card .card-content a :focus, body .card-container .card .card-content a :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body .card-container .card .card-content a:hover, body .card-container .card .card-content a :focus, body .card-container .card .card-content a :active {
   background-color: #3434ff;
   color: white;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 body .card-container .card .card-content .a1 {
@@ -895,9 +733,7 @@ body .card-container .card .card-content .a6 {
   left: 56px;
 }
 body .card-container .card:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 @media only screen and (max-width: 420px) {
   body .card-container .card .card-content a {
@@ -911,12 +747,8 @@ body .card-container .card:hover {
   }
 }
 body .db {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 50px;
 }
 body .db .btn {
@@ -932,30 +764,20 @@ body .db .btn {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   max-width: 110px;
   padding: 20px 24px;
 }
 body .db .btn:hover, body .db .btn :focus, body .db .btn :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 @media only screen and (max-width: 420px) {
   body .db .btn {
     min-width: 80%;
-    -webkit-transform: scale(0.9) !important;
-        -ms-transform: scale(0.9) !important;
-            transform: scale(0.9) !important;
+    transform: scale(0.9) !important;
     font-size: 25px;
   }
 }
@@ -963,17 +785,10 @@ body .hr1 {
   margin-top: 80px;
 }
 body .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
   text-align: center;
   margin-top: 140px;
 }
@@ -996,14 +811,9 @@ body .heading p {
 }
 body .container {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 body .container .wrapper1 {
   text-align: center;
@@ -1043,36 +853,24 @@ body .container .wrapper1 a {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   color: #3434ff;
   border: 1px solid #3434ff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   border-radius: 3px;
   max-width: 140px;
 }
 body .container .wrapper1 a:hover, body .container .wrapper1 a :focus, body .container .wrapper1 a :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body .container .wrapper1 a:hover, body .container .wrapper1 a :focus, body .container .wrapper1 a :active {
   background-color: #3434ff;
   color: white;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 body .container .wrapper2 {
@@ -1114,36 +912,24 @@ body .container .wrapper2 a {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   -webkit-transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
-  transition-property: -webkit-box-shadow, -webkit-transform;
-  -o-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   color: #3434ff;
   border: 1px solid #3434ff;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   border-radius: 3px;
   max-width: 140px;
 }
 body .container .wrapper2 a:hover, body .container .wrapper2 a :focus, body .container .wrapper2 a :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 body .container .wrapper2 a:hover, body .container .wrapper2 a :focus, body .container .wrapper2 a :active {
   background-color: #3434ff;
   color: white;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 @media only screen and (max-width: 1115px) {
@@ -1153,13 +939,10 @@ body .container .wrapper2 a:hover, body .container .wrapper2 a :focus, body .con
   }
 }
 body #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 100%;
   background-color: #3434ff;
-  -webkit-box-shadow: 0 4px 8px rgba(52, 52, 255, 0.3);
-          box-shadow: 0 4px 8px rgba(52, 52, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(52, 52, 255, 0.3);
   position: relative;
   top: 170px;
   padding-left: 60px;
@@ -1211,18 +994,13 @@ body #about .text .button {
   text-transform: uppercase;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   position: relative;
   top: 45px;
 }
 body #about .text .button:hover, body #about .text .button :focus, body #about .text .button :active {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
   background-color: #3434ff;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -1254,11 +1032,8 @@ body #about .image2 {
 }
 @media only screen and (max-width: 1024px) {
   body #about {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   body #about .text {
     max-width: 690px;
@@ -1280,9 +1055,7 @@ body #about .image2 {
   body #about .text .button {
     display: inline-block;
     min-width: 100%;
-    -webkit-transition-duration: 0.67s;
-         -o-transition-duration: 0.67s;
-            transition-duration: 0.67s;
+    transition-duration: 0.67s;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -1301,33 +1074,21 @@ body footer {
   margin-top: 100px;
 }
 body footer #thebiggestdiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-top: 90px;
 }
 body footer #thebiggestdiv img {
   max-width: 25vw;
-  -webkit-transition-duration: 0.4s;
-       -o-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 body footer #thebiggestdiv img:hover, body footer #thebiggestdiv img :focus :active {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 body footer #thebiggestdiv #first {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 40px;
 }
 body footer #thebiggestdiv #first h3 {
@@ -1344,21 +1105,14 @@ body footer #thebiggestdiv #first a {
   text-decoration: none;
   color: #69697b;
   margin-bottom: 15px;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 body footer #thebiggestdiv #first a:hover {
   color: #3434ff;
 }
 body footer #thebiggestdiv #second {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 40px;
 }
 body footer #thebiggestdiv #second h3 {
@@ -1375,9 +1129,7 @@ body footer #thebiggestdiv #second a {
   text-decoration: none;
   color: #69697b;
   margin-bottom: 15px;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 body footer #thebiggestdiv #second a:hover {
   color: #3434ff;
@@ -1385,22 +1137,16 @@ body footer #thebiggestdiv #second a:hover {
 body footer #thebiggestdiv #second #a7 {
   color: #3434ff;
   text-decoration: underline;
-  -webkit-text-decoration-color: #3434ff;
-          text-decoration-color: #3434ff;
+  text-decoration-color: #3434ff;
 }
 body footer #thebiggestdiv #second #a7:hover {
   color: #0b0b2c;
   text-decoration: underline;
-  -webkit-text-decoration-color: #0b0b2c;
-          text-decoration-color: #0b0b2c;
+  text-decoration-color: #0b0b2c;
 }
 body footer .map {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 body footer .map iframe {
   border-radius: 2em;
@@ -1409,8 +1155,6 @@ body footer .map iframe {
   margin-right: 50px;
   width: 500px;
   height: 500px;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   opacity: 0.7;
 }
@@ -1419,29 +1163,18 @@ body footer .map iframe:hover {
 }
 @media only screen and (max-width: 1115px) {
   body footer .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-left: 50px;
     margin-top: 40px;
   }
 }
 @media only screen and (max-width: 990px) {
   body footer #thebiggestdiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-content: center;
+    flex-wrap: wrap;
     text-align: center;
   }
   body footer #thebiggestdiv img {

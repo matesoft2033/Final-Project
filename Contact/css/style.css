@@ -1,28 +1,14 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: url(../images/back.jpg) no-repeat;
   background-size: cover;
@@ -35,8 +21,7 @@ body .wrapper {
   border: 2px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 30px 40px;
 }
@@ -65,15 +50,6 @@ body .wrapper .input-box input {
 body .wrapper .input-box input ::-moz-placeholder {
   color: #fff;
 }
-body .wrapper .input-box input ::-webkit-input-placeholder {
-  color: #fff;
-}
-body .wrapper .input-box input :-ms-input-placeholder {
-  color: #fff;
-}
-body .wrapper .input-box input ::-ms-input-placeholder {
-  color: #fff;
-}
 body .wrapper .input-box input ::placeholder {
   color: #fff;
 }
@@ -81,18 +57,12 @@ body .wrapper .input-box i {
   position: absolute;
   right: 20px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 20px;
 }
 body .wrapper .remember-forgot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 14.5px;
   margin: -15px 0 15px;
 }
@@ -114,8 +84,7 @@ body .wrapper .btn {
   border: none;
   outline: none;
   border-radius: 40px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 16px;
   color: #333;

@@ -1,0 +1,708 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card1 {
+  max-width: 700px !important;
+  margin: 0 auto;
+  left: 20px;
+}
+.card1 .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.card1 .row1 {
+  display: flex;
+  flex-direction: column;
+}
+.card1 .col-md-7 {
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 10vh;
+  background-color: lightgray;
+  z-index: 1;
+}
+body header div {
+  display: flex;
+  align-items: center;
+}
+body header div img {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  max-width: 20vw;
+}
+body header div img:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 990px) {
+  body header div img {
+    max-width: 18vw;
+  }
+}
+body header div nav {
+  margin-left: 80px;
+}
+body header div nav .a1 {
+  color: #3434ff;
+}
+body header div nav a {
+  text-decoration: none;
+  font-family: "BPG Banner", sans-serif;
+  margin-right: 25px;
+  color: white;
+}
+body header div nav a.a1, body header div nav a.a2, body header div nav a.a3, body header div nav a.a4, body header div nav a.a5 {
+  transition: color 0.3s ease;
+}
+body header div nav a.a1:hover, body header div nav a.a2:hover, body header div nav a.a3:hover, body header div nav a.a4:hover, body header div nav a.a5:hover {
+  color: #3434ff;
+  text-decoration: none;
+}
+body header .btn {
+  font-family: "BPG Banner", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3434ff;
+  color: white;
+  max-width: 100px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+body header .btn:hover, body header .btn :focus, body header .btn :active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  color: white;
+}
+body header .fa.fa-bars {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  body nav {
+    display: none;
+  }
+  body header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  body header div img {
+    max-width: 25vw;
+  }
+  body header .div1 {
+    display: flex;
+  }
+  body header .div1 #spacer {
+    width: 60px;
+  }
+  body .fa.fa-bars {
+    display: inline-block !important;
+    font-size: 35px;
+    position: relative;
+    right: 30px;
+  }
+}
+@media only screen and (max-width: 1115px) {
+  body header div img {
+    max-width: 25vw;
+  }
+}
+@media only screen and (max-width: 1002px) {
+  body header div img {
+    max-width: 30vw;
+  }
+}
+@media only screen and (max-width: 840px) {
+  body header div img {
+    max-width: 35vw;
+  }
+}
+@media only screen and (max-width: 715px) {
+  body header div img {
+    max-width: 40vw;
+  }
+}
+@media only screen and (max-width: 625px) {
+  body header div img {
+    max-width: 50vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body header div img {
+    max-width: 56vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body header div img {
+    max-width: 65vw;
+  }
+}
+@media only screen and (max-width: 385px) {
+  body header div img {
+    max-width: 67vw;
+  }
+}
+body .header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: 150px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+body .header h2 {
+  color: #0b0b2c;
+  font-family: "BPG WEB 002 Caps", sans-serif;
+  font-size: 40px;
+}
+body .header p {
+  color: #69697b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+body .card {
+  top: 200px;
+  left: 80px;
+  border-radius: 1.25rem;
+  max-width: 1200px !important;
+  background-color: #f2f2f2;
+  transition-duration: 0.4s;
+  overflow-x: hidden;
+}
+body .card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body .card .col-md-8 {
+  max-width: 400px;
+  align-self: center;
+}
+body .card .img-fluid {
+  border-radius: 18px;
+}
+body .card .card-body h5 {
+  font-size: 32px;
+  transition-duration: 0.4s;
+}
+body .card .card-body h5:hover {
+  cursor: pointer;
+  color: #3434ff;
+}
+body .card .card-body .card-text {
+  font-size: 17px;
+}
+body .card .card-body .card-text i {
+  font-size: 25px;
+  color: #3434ff;
+}
+@media only screen and (max-width: 1115px) {
+  body .card {
+    max-width: 700px !important;
+    margin: 0 auto;
+    left: 20px;
+  }
+  body .card .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  body .card .row {
+    display: flex;
+    flex-direction: column;
+  }
+  body .card .col-md-4 {
+    min-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (max-width: 910px) {
+  body .card {
+    max-width: 600px !important;
+    display: flex;
+    align-content: flex-start;
+    left: 6px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  body .card {
+    max-width: 450px !important;
+  }
+}
+@media only screen and (max-width: 506px) {
+  body .card {
+    max-width: 400px !important;
+  }
+}
+@media only screen and (max-width: 451px) {
+  body .card {
+    max-width: 300px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  body .card {
+    max-width: 250px !important;
+  }
+}
+body section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 450px;
+  margin-left: 80px;
+}
+body section .div h2 {
+  color: #0b0b2c;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+body section .div p {
+  max-width: 496px;
+  color: #69697b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+body section .button {
+  position: relative;
+  top: 50px;
+  font-family: "BPG Banner", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3434ff;
+  color: white;
+  max-width: 100px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  color: #3434ff;
+  border: 1px solid #3434ff;
+  transition: 0.5s;
+  max-width: 100%;
+  max-height: 67px;
+  margin-right: 60px;
+  margin-top: -50px;
+}
+body section .button:hover, body section .button :focus, body section .button :active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  color: white;
+}
+body section .button:hover, body section .button :focus, body section .button :active {
+  background-color: #3434ff;
+  color: white !important;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 873px) {
+  body section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 574px) {
+  body section {
+    align-content: center;
+    position: relative;
+    right: 27px;
+  }
+  body section .div h2 {
+    font-size: 30px;
+  }
+  body section .div p {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body section .button {
+    margin-right: 20px;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 335px) {
+  body section {
+    margin-left: 54px;
+  }
+  body section .button {
+    padding: 15px;
+  }
+}
+body .card1 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 570px;
+  border-radius: 1.25rem;
+  max-width: 1000px !important;
+  background-color: #f2f2f2;
+  transition-duration: 0.4s;
+  overflow-x: hidden;
+}
+body .card1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body .card1 .col-md-4 {
+  min-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+body .card1 .col-md-7 {
+  display: flex;
+  align-self: center;
+  margin-top: 18px;
+}
+body .card1 .col-md-7 h5 {
+  font-size: 25px;
+  transition-duration: 0.4s;
+}
+body .card1 .col-md-7 h5:hover {
+  color: #3434ff;
+}
+body .card1 .col-md-7 p {
+  color: #69697b;
+}
+body .card1 .col-md-7 .icons {
+  display: flex;
+}
+body .card1 .col-md-7 .icons .bx {
+  font-size: 30px;
+  color: #3434ff;
+  margin-right: 10px;
+}
+body .card1 .col-md-7 .icons .bx-time-five {
+  margin-left: 40px;
+}
+body .card1 .col-md-7 .icons .bx-map {
+  margin-left: 40px;
+}
+body .card1 .col-md-7 p {
+  font-size: 20px;
+}
+@media only screen and (max-width: 1115px) {
+  body .card1 {
+    max-width: 800px !important;
+    margin: 0 auto;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 910px) {
+  body .card1 {
+    max-width: 600px !important;
+    display: flex;
+    align-content: flex-start;
+    left: 6px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  body .card1 {
+    max-width: 430px !important;
+  }
+  body .card1 .col-md-7 .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body .card1 .col-md-7 .icons .bx-time-five {
+    margin-left: 0;
+  }
+  body .card1 .col-md-7 .icons .bx-map {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 506px) {
+  body .card1 {
+    max-width: 400px !important;
+  }
+}
+@media only screen and (max-width: 451px) {
+  body .card1 {
+    max-width: 300px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  body .card1 {
+    max-width: 250px !important;
+  }
+}
+body .card2 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 570px;
+  border-radius: 1.25rem;
+  max-width: 1000px !important;
+  background-color: #f2f2f2;
+  transition-duration: 0.4s;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+body .card2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body .card2 .col-md-5 {
+  min-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+body .card2 .col-md-5 .img-fluid {
+  min-width: 100%;
+}
+body .card2 .col-md-6 {
+  display: flex;
+  align-self: center;
+  margin-top: 18px;
+  min-width: 100%;
+}
+body .card2 .col-md-6 h5 {
+  font-size: 25px;
+  transition-duration: 0.4s;
+}
+body .card2 .col-md-6 h5:hover {
+  color: #3434ff;
+}
+body .card2 .col-md-6 p {
+  color: #69697b;
+}
+body .card2 .col-md-6 .icons {
+  display: flex;
+}
+body .card2 .col-md-6 .icons .bx {
+  font-size: 30px;
+  color: #3434ff;
+  margin-right: 10px;
+}
+body .card2 .col-md-6 .icons .bx-time-five {
+  margin-left: 40px;
+}
+body .card2 .col-md-6 .icons .bx-map {
+  margin-left: 40px;
+}
+body .card2 .col-md-6 p {
+  font-size: 20px;
+}
+@media only screen and (max-width: 1115px) {
+  body .card2 {
+    max-width: 800px !important;
+    margin: 0 auto;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 910px) {
+  body .card2 {
+    max-width: 600px !important;
+    display: flex;
+    align-content: flex-start;
+    left: 6px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  body .card2 {
+    max-width: 430px !important;
+  }
+  body .card2 .col-md-6 .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body .card2 .col-md-6 .icons .bx-time-five {
+    margin-left: 0;
+  }
+  body .card2 .col-md-6 .icons .bx-map {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 506px) {
+  body .card2 {
+    max-width: 400px !important;
+  }
+}
+@media only screen and (max-width: 451px) {
+  body .card2 {
+    max-width: 300px !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  body .card2 {
+    max-width: 250px !important;
+  }
+}
+body footer {
+  background-color: #222222;
+  position: relative;
+  top: 650px;
+}
+body footer #thebiggestdiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+body footer #thebiggestdiv img {
+  max-width: 25vw;
+  transition-duration: 0.4s;
+}
+body footer #thebiggestdiv img:hover, body footer #thebiggestdiv img :focus :active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body footer #thebiggestdiv #first {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body footer #thebiggestdiv #first h3 {
+  color: #3434ff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 1.111em;
+}
+body footer #thebiggestdiv #first a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #69697b;
+  margin-bottom: 15px;
+  transition-duration: 0.3s;
+}
+body footer #thebiggestdiv #first a:hover {
+  color: #3434ff;
+}
+body footer #thebiggestdiv #second {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+body footer #thebiggestdiv #second h3 {
+  color: #3434ff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 25px;
+  line-height: 1.111em;
+}
+body footer #thebiggestdiv #second a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #69697b;
+  margin-bottom: 15px;
+  transition-duration: 0.3s;
+}
+body footer #thebiggestdiv #second a:hover {
+  color: #3434ff;
+}
+body footer #thebiggestdiv #second #a7 {
+  color: #3434ff;
+  text-decoration: underline;
+  text-decoration-color: #3434ff;
+}
+body footer #thebiggestdiv #second #a7:hover {
+  color: #0b0b2c;
+  text-decoration: underline;
+  text-decoration-color: #0b0b2c;
+}
+body footer #thebiggestdiv .map {
+  display: flex;
+  justify-content: flex-end;
+}
+body footer #thebiggestdiv .map iframe {
+  border-radius: 2em;
+  border: none;
+  margin-bottom: 40px;
+  margin-right: 50px;
+  width: 500px;
+  height: 500px;
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}
+body footer #thebiggestdiv .map iframe:hover {
+  opacity: 1;
+}
+@media only screen and (max-width: 990px) {
+  body footer #thebiggestdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  body footer #thebiggestdiv img {
+    max-width: 35vw;
+  }
+}
+@media only screen and (max-width: 720px) {
+  body footer #thebiggestdiv img {
+    max-width: 40vw;
+  }
+}
+@media only screen and (max-width: 630px) {
+  body footer #thebiggestdiv img {
+    max-width: 45vw;
+  }
+}
+@media only screen and (max-width: 530px) {
+  body footer #thebiggestdiv img {
+    max-width: 50vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body footer #thebiggestdiv img {
+    max-width: 55vw;
+  }
+}
+@media only screen and (max-width: 729px) {
+  body .big .txt {
+    padding-top: 30px;
+  }
+  body .big .txt h1 {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  body .big .txt p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 454px) {
+  body .big .txt a {
+    display: inline-table;
+  }
+  body .big .txt h1 {
+    font-size: 18px;
+  }
+  body .big .txt p {
+    font-size: 16px;
+  }
+}
