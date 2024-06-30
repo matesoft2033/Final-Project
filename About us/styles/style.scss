@@ -817,4 +817,9 @@ body {
             }
         }
     }
+    @media only screen and (max-width: 388px) {
+        .big {
+            overflow-x: hidden;
+        }
+    }
 }
